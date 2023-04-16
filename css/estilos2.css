@@ -423,6 +423,101 @@ hr {
   width: 100%;
   max-width: 500px;
 }
+
+/* Administrador___________________________________________________________________________________________ */
+.main-div_1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.main-div_2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.form-admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  padding: 10px;
+  height: 100%;
+  max-width: 500px;
+  justify-content: center;
+}
+.form-admin h2 {
+  flex: 1 0 100%;
+  text-align: center;
+  color: white;
+}
+.id-admin {
+  padding: 5px;
+  flex: 1 0 130px;
+}
+.title-admin {
+  padding: 5px;
+  flex: 1 0 130px;
+}
+.select-admin {
+  padding: 5px;
+  flex: 1 0 100%;
+}
+.text-admin {
+  padding: 5px;
+  flex: 1 0 100%;
+}
+.button-admin {
+  flex: 1 0 40px;
+  max-width: 100px;
+}
+
+.table {
+  width: 70%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  border: 0;
+}
+
+.table caption {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 8px 0px;
+  color: white;
+}
+
+.table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-bottom: 4px solid #ddd;
+  display: block;
+}
+
+.table th,
+.table td {
+  font-size: 16px;
+  padding: 8px;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+}
+
+.table td:last-child {
+  border-bottom: 0px;
+}
+.table td::before {
+  content: attr(data-label);
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+}
+
 @media screen and (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -447,6 +542,7 @@ hr {
     width: 100%;
     line-height: 60px;
   }
+  /*  */
 }
 
 /* Responsivo 600px_________________________________________________________________________ */

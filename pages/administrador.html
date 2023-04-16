@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/4989dcb279.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Administrador</title>
   </head>
   <body>
     <div id="particles-js"></div>
@@ -35,36 +35,60 @@
       </div>
     </header>
     <main>
-      <div>
-        <form action="" method="post">
-          <section>
-            <input type="text" placeholder="ID" />
-            <input type="text" placeholder="Titulo" />
-            <select name="" id="">
-              <option value="x">Seleccione un elemento</option>
-              <option value="1">☆</option>
-              <option value="2">☆☆</option>
-              <option value="3">☆☆☆</option>
-              <option value="4">☆☆☆☆</option>
-              <option value="5">☆☆☆☆☆</option>
-            </select>
-          </section>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" value="Enviar" />
+      <div class="main-div_1">
+        <form class="form-admin" action="" method="post">
+          <h2>Ingrese nuevo trabajo</h2>
+          <input class="id-admin" type="text" placeholder="ID" />
+          <input class="title-admin" type="text" placeholder="Titulo" />
+          <select class="select-admin" name="" id="">
+            <option value="x">Seleccione un elemento</option>
+            <option value="1">☆</option>
+            <option value="2">☆☆</option>
+            <option value="3">☆☆☆</option>
+            <option value="4">☆☆☆☆</option>
+            <option value="5">☆☆☆☆☆</option>
+          </select>
+          <textarea cols="30" rows="10" class="text-admin"></textarea>
+          <button class="button-admin" type="submit">Enviar</button>
         </form>
       </div>
-      <div>
-        <table>
-          <tr>
-            <td>ID</td>
-            <td>Titulo</td>
-            <td>Actions</td>
-          </tr>
-          <tr>
-            <th>0</th>
-            <th>Primera imagen</th>
-            <th><button>Ed</button><button>El</button></th>
-          </tr>
+      <div class="main-div_2">
+        <table class="table">
+          <caption>
+            Trabajos
+          </caption>
+          <tbody>
+            <tr>
+              <td data-label="ID">0</td>
+              <td data-label="Titulo">Diseño de blog</td>
+              <td data-label="Editar">
+                <button><i class="fa-solid fa-pen-to-square"></i></button>
+              </td>
+              <td data-label="Eliminar">
+                <button><i class="fa-solid fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="ID">1</td>
+              <td data-label="Titulo">Diseño de e-commerce</td>
+              <td data-label="Editar">
+                <button><i class="fa-solid fa-pen-to-square"></i></button>
+              </td>
+              <td data-label="Eliminar">
+                <button><i class="fa-solid fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="ID">2</td>
+              <td data-label="Titulo">Diseño de app</td>
+              <td data-label="Editar">
+                <button><i class="fa-solid fa-pen-to-square"></i></button>
+              </td>
+              <td data-label="Eliminar">
+                <button><i class="fa-solid fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </main>
