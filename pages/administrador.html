@@ -9,6 +9,12 @@
       src="https://kit.fontawesome.com/4989dcb279.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <title>Administrador</title>
   </head>
   <body>
@@ -34,62 +40,90 @@
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
-    <main>
-      <div class="main-div_1">
-        <form class="form-admin" action="" method="post">
-          <h2>Ingrese nuevo trabajo</h2>
-          <input class="id-admin" type="text" placeholder="ID" />
-          <input class="title-admin" type="text" placeholder="Titulo" />
-          <select class="select-admin" name="" id="">
-            <option value="x">Seleccione un elemento</option>
-            <option value="1">☆</option>
-            <option value="2">☆☆</option>
-            <option value="3">☆☆☆</option>
-            <option value="4">☆☆☆☆</option>
-            <option value="5">☆☆☆☆☆</option>
-          </select>
-          <textarea cols="30" rows="10" class="text-admin"></textarea>
-          <button class="button-admin" type="submit">Enviar</button>
-        </form>
-      </div>
-      <div class="main-div_2">
-        <table class="table">
-          <caption>
-            Trabajos
-          </caption>
-          <tbody>
-            <tr>
-              <td data-label="ID">0</td>
-              <td data-label="Titulo">Diseño de blog</td>
-              <td data-label="Editar">
-                <button><i class="fa-solid fa-pen-to-square"></i></button>
-              </td>
-              <td data-label="Eliminar">
-                <button><i class="fa-solid fa-trash"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="ID">1</td>
-              <td data-label="Titulo">Diseño de e-commerce</td>
-              <td data-label="Editar">
-                <button><i class="fa-solid fa-pen-to-square"></i></button>
-              </td>
-              <td data-label="Eliminar">
-                <button><i class="fa-solid fa-trash"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="ID">2</td>
-              <td data-label="Titulo">Diseño de app</td>
-              <td data-label="Editar">
-                <button><i class="fa-solid fa-pen-to-square"></i></button>
-              </td>
-              <td data-label="Eliminar">
-                <button><i class="fa-solid fa-trash"></i></button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <main class="text-white">
+      <div class="row w-100 flex-md-row flex-column">
+        <div class="col-md-6 flex-md-w-50">
+          <div class="w-90 flex-md-m-4 border p-3 rounded">
+            <form class="" action="" method="post">
+              <section class="form-group text-center">
+                <h2>Ingrese nuevo trabajo</h2>
+              </section>
+              <section class="form-group my-2">
+                <label for="ID" class="d-block">ID</label>
+                <input class="w-100 p-1" type="text" placeholder="ID" />
+              </section>
+              <section class="form-group my-2">
+                <label for="" class="d-block">Titulo</label>
+                <input class="w-100 p-1" type="text" placeholder="Titulo" />
+              </section>
+              <section class="form-group my-3">
+                <select class="w-100 p-2" name="" id="">
+                  <option value="x">Seleccione optimizacion</option>
+                  <option value="1">☆</option>
+                  <option value="2">☆☆</option>
+                  <option value="3">☆☆☆</option>
+                  <option value="4">☆☆☆☆</option>
+                  <option value="5">☆☆☆☆☆</option>
+                </select>
+              </section>
+              <section class="form-group my-2">
+                <label for="" class="d-block">Descripcion</label>
+                <textarea cols="10" rows="5" class="w-100 h-50"></textarea>
+              </section>
+              <section class="form-group text-center">
+                <button type="submit" class="btn btn-light btn-block w-50">
+                  Enviar
+                </button>
+              </section>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 flex-md-w-50">
+          <h3>Trabajos</h3>
+          <div class="table-responsive w-90">
+            <table class="table text-white text-center">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Titulo</th>
+                  <th>Editar</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>Diseño de app</td>
+                  <td>
+                    <button class="btn btn-primary btn-icon btn-sm">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger btn-icon btn-sm">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Diseño de app</td>
+                  <td>
+                    <button class="btn btn-primary btn-icon btn-sm">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger btn-icon btn-sm">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Añade tantas filas como necesites -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
